@@ -1,4 +1,4 @@
-# Mini Projects of Labs
+# Mini Project of SQL Lab
 
 1. Bookstore Management Admin Dashboard
 2. Languages and Technologies:<br>
