@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #006666, #00a3a3);
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 200px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.4);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.moon {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.mountain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #008080;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #006666;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.register-link a {
+  color: #00ffff;
+  text-decoration: none;
+}

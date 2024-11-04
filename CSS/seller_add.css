@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  margin: 0;
+  background: linear-gradient(to bottom right, #006666, #00a3a3);
+  overflow-y: scroll;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 60px 0px;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+.form-actions button[type="reset"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.form-actions button:hover {
+  opacity: 0.9;
+}
