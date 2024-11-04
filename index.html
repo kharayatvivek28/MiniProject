@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="Image/logo_icon.jpeg" />
   </head>
   <body>
+    <button class="mode-toggle" id="modeToggle">Light Mode</button>
     <div class="background">
       <div class="tree"></div>
       <div class="moon"></div>
@@ -27,12 +28,23 @@
             required
           />
         </div>
-
         <button type="submit" value="Login" class="login-btn">LOGIN</button>
       </form>
       <div class="register-link">
         Don't have an account? <a href="register_form.html">REGISTER NOW</a>
       </div>
     </div>
+
+    <script>
+      const modeToggle = document.getElementById("modeToggle");
+      const body = document.body;
+
+      modeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        modeToggle.textContent = body.classList.contains("dark-mode")
+          ? "Light Mode"
+          : "Dark Mode";
+      });
+    </script>
   </body>
 </html>
