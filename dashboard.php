@@ -28,11 +28,11 @@ if (!isset($_SESSION['username'])) {
         <div class="column">
             <h2>Insert Data</h2>
             <ul>
-                <li onclick="location.href='customer_add.php';">Add Customer</li>
-                <li onclick="location.href='employee_add.php';">Add Employee</li>
-                <li onclick="location.href='book_add.php';">Add Book</li>
-                <li onclick="location.href='seller_add.php';">Add Seller</li>
-                <li onclick="location.href='publisher_add.php';">Add Publisher</li>
+                <li onclick="location.href='customer_add.html';">Add Customer</li>
+                <li onclick="location.href='employee_add.html';">Add Employee</li>
+                <li onclick="location.href='book_add.html';">Add Book</li>
+                <li onclick="location.href='seller_add.html';">Add Seller</li>
+                <li onclick="location.href='publisher_add.html';">Add Publisher</li>
             </ul>
         </div>
         <div class="column">
