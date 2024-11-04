@@ -18,19 +18,27 @@ VS Code or any text editor (based on your preference for development).<br>
 
 <h3>Output</h3><br>
 <h3> You can see all the Output Screenshots from the Output Folder. Below attached are some of them</h3><br>
-<h4>Admin Login Page</h4>
+Admin Login Page
+
 ![Admin Login Page Screenshot](Output/LoginPage.png)<br><br>
-<h4>DarkMode Admin Login Page</h4>
+DarkMode Admin Login Page
+
 ![DarkMode Admin Login Page  Screenshot](Output/LoginPageDarkMode.png)<br><br>
-<h4>Registration Page</h4>
+Registration Page
+
 ![Registration Page  Screenshot](Output/RegistrationPage.png)<br><br>
-<h4>DarkMode Registration</h4>
+DarkMode Registration
+
 ![DarkMode Registration Page  Screenshot](Output/RegistrationDarkMode.png)<br><br>
-<h4>Dashboard Page</h4>
+Dashboard Page
+
 ![Dashboard Page  Screenshot](Output/DashboardView.png)<br><br>
-<h4>DataFlow Diagram</h4>
+DataFlow Diagram
+
 ![DataFlow Diagram  Screenshot](Output/DataFlow%20Diagram.png)<br><br>
-<h4>View Page</h4>
+View Page
+
 ![View Page  Screenshot](Output/BooksView.png)<br><br>
-<h4>Data Stored in Database</h4>
+Data Stored in Database
+
 ![Data Stored in Database  Screenshot](Output/BookData_database.png)<br><br>
