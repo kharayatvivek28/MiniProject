@@ -5,14 +5,36 @@
   font-family: Arial, sans-serif;
 }
 
+:root {
+  --bg-gradient-light: linear-gradient(to bottom right, #006666, #00a3a3);
+  --bg-gradient-dark: linear-gradient(to bottom right, #001a1a, #003333);
+  --form-bg-light: rgba(255, 255, 255, 0.1);
+  --form-bg-dark: rgba(0, 0, 0, 0.3);
+  --text-color-light: white;
+  --text-color-dark: #e0e0e0;
+  --input-bg-light: rgba(255, 255, 255, 0.1);
+  --input-bg-dark: rgba(255, 255, 255, 0.05);
+  --button-bg-light: #008080;
+  --button-bg-dark: #004d4d;
+  --button-hover-light: #006666;
+  --button-hover-dark: #003333;
+  --link-color-light: #00ffff;
+  --link-color-dark: #00cccc;
+}
+
 body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #006666, #00a3a3);
+  background: var(--bg-gradient-light);
   overflow-y: auto;
   padding: 20px 0;
+  transition: background 0.3s ease;
+}
+
+body.dark-mode {
+  background: var(--bg-gradient-dark);
 }
 
 .background {
@@ -54,7 +76,7 @@ body {
 }
 
 .register-container {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--form-bg-light);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 40px;
@@ -62,12 +84,21 @@ body {
   max-width: 500px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   margin: auto;
+  transition: background 0.3s ease;
+}
+
+.dark-mode .register-container {
+  background: var(--form-bg-dark);
 }
 
 .register-container h2 {
-  color: white;
+  color: var(--text-color-light);
   text-align: center;
   margin-bottom: 30px;
+}
+
+.dark-mode .register-container h2 {
+  color: var(--text-color-dark);
 }
 
 .input-group {
@@ -78,39 +109,93 @@ body {
   width: 100%;
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--input-bg-light);
   border-radius: 5px;
-  color: white;
+  color: var(--text-color-light);
   font-size: 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .input-group input {
+  background: var(--input-bg-dark);
+  color: var(--text-color-dark);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .input-group input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.dark-mode .input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .register-btn {
   width: 100%;
   padding: 10px;
-  background: #008080;
+  background: var(--button-bg-light);
   border: none;
   border-radius: 5px;
-  color: white;
+  color: var(--text-color-light);
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
+.dark-mode .register-btn {
+  background: var(--button-bg-dark);
+}
+
 .register-btn:hover {
-  background: #006666;
+  background: var(--button-hover-light);
+}
+
+.dark-mode .register-btn:hover {
+  background: var(--button-hover-dark);
 }
 
 .login-link {
   text-align: center;
   margin-top: 20px;
-  color: white;
+  color: var(--text-color-light);
+}
+
+.dark-mode .login-link {
+  color: var(--text-color-dark);
 }
 
 .login-link a {
-  color: #00ffff;
+  color: var(--link-color-light);
   text-decoration: none;
+}
+
+.dark-mode .login-link a {
+  color: var(--link-color-dark);
+}
+
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: var(--text-color-light);
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .mode-toggle {
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--text-color-dark);
+}
+
+.mode-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .mode-toggle:hover {
+  background: rgba(0, 0, 0, 0.4);
 }

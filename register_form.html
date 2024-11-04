@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
- <link rel="stylesheet" href="CSS/registration_form.css">
- <link rel="icon" type="image/x-icon" href="Image/logo_icon.jpeg">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="CSS/registration_form.css" />
+    <link rel="icon" type="image/x-icon" href="Image/logo_icon.jpeg" />
   </head>
   <body>
-  <div class="background">
+    <button class="mode-toggle" id="modeToggle">Light Mode</button>
+    <div class="background">
       <div class="tree"></div>
       <div class="moon"></div>
       <div class="mountain"></div>
@@ -20,10 +21,20 @@
           <input type="text" name="username" placeholder="Username" required />
         </div>
         <div class="input-group">
-          <input type="text" name="first_name" placeholder="First Name" required />
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First Name"
+            required
+          />
         </div>
         <div class="input-group">
-          <input type="text" name="last_name" placeholder="Last Name" required />
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Last Name"
+            required
+          />
         </div>
         <div class="input-group">
           <input type="email" name="email" placeholder="Email" required />
@@ -63,9 +74,23 @@
         <button type="submit" class="register-btn">REGISTER</button>
       </form>
       <div class="login-link">
-        Already have an account? <a href="index.php">Login here</a>
+        Already have an account? <a href="index.html">Login here</a>
       </div>
     </div>
+
+    <script>
+      const modeToggle = document.getElementById("modeToggle");
+      const body = document.body;
+
+      modeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          modeToggle.textContent = "Light Mode";
+        } else {
+          modeToggle.textContent = "Dark Mode";
+        }
+      });
+    </script>
     <script src="form_validation.js"></script>
   </body>
 </html>
